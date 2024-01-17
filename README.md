@@ -61,3 +61,32 @@
 
 </div>
 </details>
+
+<details>
+    <summary>연결리스트</summary>
+    <div>
+        <details>
+            <summary>단일 연결리스트</summary>
+            <div markdown="1">
+                `
+                class LinkedList:
+                def __init__(self, size):
+                    self.size = size
+                    self.num = 0
+                    self.head = Node(None)
+                
+                def insert(self, value):
+                    if self.num >= self.size:
+                        return False
+                    
+                    node = Node(value)
+                    node.next = self.head.next # 비어있을 경우 None
+                `
+            </div>
+            </details>
+        </div>
+    <details>
+        <summary>이중 연결리스트</summary>
+    </details>
+
+</details>

@@ -4,6 +4,7 @@ from collections import deque
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
+
 def bfs(x, y, visited, grid):
     queue = deque([(x, y)])
     # 현재 위치를 방문했다고 표시
@@ -21,6 +22,7 @@ def bfs(x, y, visited, grid):
             if 0 <= nx < len(grid) and 0 <= ny < len(grid[0]) and not visited[nx][ny] and grid[nx][ny] == 1:
                 queue.append((nx, ny))
                 visited[nx][ny] = True
+
 
 # 2차원 배열 예제 (1은 갈 수 있는 경로, 0은 갈 수 없는 경로)
 grid = [
